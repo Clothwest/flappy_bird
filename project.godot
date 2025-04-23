@@ -13,7 +13,7 @@ config_version=5
 config/name="flappy_bird"
 run/main_scene="uid://d0pg0b2iqaf4u"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://bjn7mqbj3rrm"
 
 [display]
 
@@ -33,6 +33,7 @@ jump={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/vram_compression/import_etc2_astc=true
 textures/stretch/mode="disabled"
 textures/size/viewport_height=648
 textures/size/viewport_width=1152
