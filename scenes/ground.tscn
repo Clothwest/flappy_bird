@@ -23,7 +23,7 @@ position = Vector2(0, -46)
 shape = SubResource("RectangleShape2D_pybca")
 
 [node name="Ground2" parent="." instance=ExtResource("2_lmksl")]
-position = Vector2(336, 0)
+position = Vector2(335, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground2"]
 texture = ExtResource("1_pybca")

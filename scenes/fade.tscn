@@ -43,6 +43,7 @@ _data = {
 script = ExtResource("1_nukjo")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_left = -144.0
 offset_top = -256.0
 offset_right = 144.0

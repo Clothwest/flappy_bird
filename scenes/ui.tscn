@@ -19,6 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
 theme_override_constants/margin_top = 32
+theme_override_constants/margin_bottom = 32
 
 [node name="PointLabel" type="Label" parent="MarginContainer"]
 layout_mode = 2
@@ -68,6 +69,13 @@ text = "RESTART"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x4jx1")
 text = "EXIT"
+
+[node name="RecordLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("2_x4jx1")
+theme_override_font_sizes/font_size = 50
 
 [connection signal="pressed" from="MarginContainer/GameOverBox/Panel/MarginContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="MarginContainer/GameOverBox/Panel/MarginContainer/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

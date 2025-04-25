@@ -1,21 +1,20 @@
-[gd_scene load_steps=10 format=3 uid="uid://d0pg0b2iqaf4u"]
+[gd_scene load_steps=11 format=3 uid="uid://d0pg0b2iqaf4u"]
 
 [ext_resource type="Texture2D" uid="uid://bwf5i0qyei8n0" path="res://assets/background-day.png" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://ctdou6642tkpg" path="res://scripts/main.gd" id="1_85g3d"]
 [ext_resource type="PackedScene" uid="uid://b7w6gt7e21v2l" path="res://scenes/bird.tscn" id="1_o5qli"]
-[ext_resource type="Script" uid="uid://b5hw38hbdl14m" path="res://scripts/game_manager.gd" id="1_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://ckyfllxru6b7m" path="res://scenes/ground.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://cp4v3a1ro42t8" path="res://scenes/pipe_spawner.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bxyyy3cqbpk2a" path="res://scenes/dead_zone.tscn" id="5_tipki"]
 [ext_resource type="PackedScene" uid="uid://bfouqkld2605e" path="res://scenes/fade.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://m14nptntj5mp" path="res://scenes/ui.tscn" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://ddcakumqoecwx" path="res://scenes/saver_loader.tscn" id="9_85g3d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tipki"]
 size = Vector2(288, 20)
 
 [node name="Main" type="Node2D"]
-
-[node name="GameManager" type="Node" parent="."]
-script = ExtResource("1_tbgi4")
+script = ExtResource("1_85g3d")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -40,3 +39,5 @@ position = Vector2(24, 200)
 z_index = 10
 
 [node name="UI" parent="." instance=ExtResource("7_o6xl0")]
+
+[node name="SaverLoader" parent="." instance=ExtResource("9_85g3d")]
